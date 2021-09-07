@@ -1,0 +1,124 @@
+#new-task {
+  width:100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,.1);
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 20;
+}
+.newTask {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background: white;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
+  padding:3vh 5vh 5vh 5vh;
+  border-radius: 15px;
+  z-index: 300;
+}
+.newTask .input-content {
+  margin-top: 15px;
+}
+#new-task h3 {
+  color: #4a4a4a;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size:20px;
+  padding-bottom: 5px;
+}   
+#new-task input, #new-task textarea {
+  width: 50vh;
+  padding: 10px 12px;
+  outline: none;
+}  
+#new-task textarea {
+  font-family: "Poppins", sans-serif;
+  font-size:12px;
+  font-weight: 400;
+  height: 20vh;
+  border: 1px solid #C4C4C4;
+  border-radius: 5px;
+}
+.date-picker {
+  width:40vh;
+  margin-top:5px;
+  font-family: "Poppins", sans-serif;
+  font-size:12px;
+  font-weight: 400;
+}
+.title-input {
+  font-family: "Poppins", sans-serif;
+  font-size:12px;
+  font-weight: 400;
+  border: 1px solid #C4C4C4;
+  border-radius: 5px;
+}
+
+.btnNew {
+  margin-top: 30px;
+  width:100%;
+  padding: 12px;
+  background: #1E1D58;
+  border: none;
+  outline: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size:13px;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.close {
+  position:absolute;
+  top:15px;
+  right: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size:20px;
+  font-weight: 500;
+  color: #C4C4C4;
+  cursor: pointer;
+}
+
+@media(max-width: 500px) {
+  .newTask {
+    padding:15px 20px 20px 20px;
+  }
+  .newTask .input-content {
+    margin-top: 5px;
+  }
+  #new-task h3 {
+    font-size:17px;
+  }   
+  #new-task input, #new-task textarea {
+    width: 40vh;
+    padding: 7px 12px;
+  }  
+  #new-task textarea {
+    font-size:11px;
+    height: 15vh;
+  }
+  .date-picker {
+    width:40vh;
+    margin-top:5px;
+    font-size:11px;
+  }
+  .title-input {
+    font-size:11px;
+  }
+  .btnNew {
+    margin-top: 25px;
+    padding: 11px;
+    font-size:12px;
+  }
+  .close {
+    top:10px;
+    right: 15px;
+    font-size:15px;
+  }
+}

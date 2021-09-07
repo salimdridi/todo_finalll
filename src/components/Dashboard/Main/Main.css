@@ -1,0 +1,344 @@
+#main {
+  display:flex;
+  z-index: 15;
+}
+
+/* Menu */
+#main .menu {
+  height:88vh;
+  width: 20%;
+  border-right: .5px solid #D9D9D9;
+}
+.menu .container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+.menu .container .managment {
+  font-family: "Noto Sans", sans-serif;
+  color: #C4C4C4;
+  font-size:12px;
+  padding: 10px 15px;
+  margin-top: 15px;
+}
+.menu .container .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  cursor: pointer;
+  padding: 10px 15px;
+  padding-right:35px;
+  border-radius: 10px;
+}
+.menu .container .content h3 {
+  font-family: 'Signika', sans-serif;
+  font-weight: 400;
+  font-size:17px;
+  margin-left:15px;
+  color: #C4C4C4;
+}
+.menu .container .content svg {
+  color: #C4C4C4;
+  margin-left:15px;
+  width: 28px;
+  height:28px;
+}
+.menu .container .content:hover {
+  color: #332A7C !important;
+  border-color: #332A7C !important;
+  background: #EDEDF4 !important;
+}
+.active_color {
+  color: #332A7C !important;
+  border-color: #332A7C !important;
+  background: #EDEDF4 !important;
+}
+.message_any_task  {
+  position:absolute;
+  top: 30%;
+  left:50%;
+  transform:translate(-50%, -50%);
+}
+.message_any_task p {
+  color: #999999;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-weight: 400;
+}
+
+.completed-icon {
+  width: 20px;
+  height:20px;
+  border-radius: 0 0 50px 50px;
+  border:2px solid #C4C4C4;
+}
+.date-icon {
+  width: 20px;
+  height:20px;
+  border:2px solid #C4C4C4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:  #C4C4C4;
+  font-family: 'Signika', sans-serif;
+  font-size:10px;
+}
+.task-icon {
+  position: relative;
+  width: 20px;
+  height:20px;
+  border:2px solid #C4C4C4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Signika', sans-serif;
+}
+.task-icon span{
+  position: absolute;
+  width: 70%;
+  height:2px;
+  border:1px solid #C4C4C4;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Signika', sans-serif;
+}
+
+.task-icon span:nth-child(1) {
+  top: 20%;
+}
+.task-icon span:nth-child(3) {
+  top: 80%;
+}
+
+.progress-icon {
+  position: relative;
+  width: 20px;
+  height:15px;
+  top:4px;
+  border:2px solid #C4C4C4;
+}
+.progress-icon span:nth-child(1) {
+  position: absolute;
+  width: 70%;
+  height:8px;
+  border:2px solid #C4C4C4;
+  top: -35%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* Tasks */
+#main .tasks {
+  width: 80%;
+  height: 88vh;
+  overflow-y: auto;
+  padding-bottom: 40px;
+}
+.tasks::-webkit-scrollbar {
+  width: 10px;
+}
+.tasks::-webkit-scrollbar-track {
+  background: #F4F3F3; 
+  border-radius:15px;
+}
+.tasks::-webkit-scrollbar-thumb {
+  background: #C4C4C4; 
+  border-radius:15px;
+}
+
+
+.tasks .container{
+  padding-bottom:10px;
+}
+.tasks .container .content {
+  display: flex;
+  justify-content: space-between;
+  padding:40px 45px;
+}
+.tasks .container .content h2 {
+  font-family: 'Rubik', sans-serif;
+  font-size:47px;
+  color: #03015D;
+}
+.tasks .container .content button {
+  font-family: 'Poppins', sans-serif;
+  font-size:15px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #03015D;
+  border:none;
+  outline: none;
+  padding:0px 35px;
+  border-radius:8px;
+  cursor: pointer;
+  z-index: 10;
+  height:50px;
+}
+.count-todos {
+  font-family: "Poppins" ,sans-serif;
+  color: #C4C4C4;
+  font-weight: 300;
+  font-size: 20px;
+} 
+.tasky {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tasky .tasky-content {
+  display:grid;
+  column-gap: 15px;
+  row-gap: 25px;
+  padding:10px 0px;
+}
+
+.tasky .tasky-content {
+  grid-template-columns: repeat(3, 23.5vw);
+}
+
+@media(max-width: 1100px) {
+  .tasky .tasky-content {
+    column-gap: 20px !important;
+  }
+  .tasky .tasky-content {
+    grid-template-columns: repeat(2, 34vw);
+  }
+}
+@media(max-width: 780px) {
+  #main .menu {
+    width: 25%;
+  }
+  #main .tasks {
+    width: 75%;
+  }
+  .tasks .container .content {
+    padding:40px 45px;
+  }
+  .tasks .container .content h2 {
+    font-size:37px;
+  }
+  .count-todos {
+  font-size: 17px !important;
+  } 
+  .tasks .container .content button {
+    font-size:13px !important;
+    padding:0px 25px;
+    height:40px;
+  }
+  .tasky .tasky-content {
+    column-gap: 20px !important;
+  }
+  .tasky .tasky-content {
+    grid-template-columns: repeat(2, 30vw);
+  }
+}
+@media(max-width: 660px) {
+  .tasks .container .content {
+    padding:30px 20px;
+  }
+  .tasks .container .content h2 {
+    font-size:37px;
+  }
+  .count-todos {
+  font-size: 17px !important;
+  } 
+  .menu .container .managment {
+    font-size:10px !important;
+    padding: 10px 5px !important;
+  }
+  .menu .content {
+    padding: 10px 0px;
+    padding-right: 15px !important;
+  }
+  .menu .container {
+    padding: 10px 5px;
+  }
+  .menu .container .content h3 {
+    font-size:13px;
+  }
+  .tasks .container .content button {
+    font-size:13px !important;
+    padding:0px 25px;
+    height:40px;
+  }
+  .tasky .tasky-content {
+    column-gap: 20px !important;
+  }
+  .tasky .tasky-content {
+    grid-template-columns: repeat(1, 50vw);
+  }
+}
+@media(max-width: 580px) {
+  #main .menu {
+    width: 35%;
+  }
+  #main .tasks {
+    width: 65%;
+  }
+  .tasks .container .content h2 {
+    font-size:20px;
+  }
+  .tasks::-webkit-scrollbar {
+    width: 5px;
+  }
+  .count-todos {
+  font-size: 11px !important;
+  } 
+  .tasks .container .content button {
+    font-size:7px !important;
+    padding:0px 10px;
+    height:30px;
+  }
+}
+@media(max-width: 500px) {
+  .tasks .container .content h2 {
+    font-size:18px;
+  }
+  .count-todos {
+  font-size: 11px !important;
+  } 
+  .tasks .container .content button {
+    font-size:7px !important;
+    padding:0px 10px;
+    height:30px;
+  }
+}
+
+@media(max-width: 420px) {
+  #main .menu {
+    width: 40%;
+  }
+  #main .tasks {
+    width: 60%;
+  }
+}
+
+@media(min-width: 1600px) {
+  .tasks .container .content {
+    padding:50px 50px;
+  }
+  .tasks .container .content h2 {
+    font-size:50px;
+  }
+  .tasky .tasky-content {
+    grid-template-columns: repeat(4, 18vw);
+  }
+  .menu .container .managment {
+    font-size:15px;
+    padding: 10px 15px;
+    margin-top: 25px;
+  }
+  .menu .container .content {
+    padding: 15px 20px;
+    padding-right:40px;
+  }
+  .menu .container .content h3 {
+    font-size:25px;
+  }
+
+}

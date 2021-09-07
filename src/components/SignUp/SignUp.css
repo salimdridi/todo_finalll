@@ -1,0 +1,156 @@
+#sign-up {
+  width:100%;
+  height: 100vh;
+  background-color: #C4C4C4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sign-up .container {
+  width: 55vw;
+  height: 70vh;
+  background-color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+#sign-up .container .content {
+   width: 50%;
+   height:100%;
+}
+#sign-up .container .content:nth-child(2) .into{
+  padding:10vh 3.5vw;
+}
+#sign-up .container .content:nth-child(2) h2 {
+  font-family: 'Rubik', sans-serif;
+  color: white;
+  font-weight: 500;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+#sign-up .container .content:nth-child(2) p {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-weight: 300;
+  font-size: 12px;
+  margin-top:10px;
+}
+#sign-up .container .content .already {
+  color: rgb(139, 139, 139);
+  font-family: "Poppins", sans-serif;
+  font-weight: 300; 
+  font-size:13px;
+  margin-top: 50px;
+}
+#sign-up .container .content .already a{
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500; 
+  font-size:13px;
+  margin-top: 2vh;
+  text-decoration: none;
+}
+#sign-up .container .content:nth-child(1) {
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+#sign-up .container .content:nth-child(2) {
+  border-radius: 15px;
+  background-color: #03015D;
+}
+#sign-up .container .content:nth-child(1) .into  {
+  position: relative;
+  height:100%;
+}
+#sign-up .container .content:nth-child(1) .into form {
+  padding: 4vh 1.8vw;
+}
+#sign-up .container .content:nth-child(1) .into .sign-up_section{
+  position: absolute;
+  bottom: 5vh;
+}
+
+#sign-up .container .content:nth-child(1) .into form input {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400; 
+  width: 22vw;
+   padding: 1.8vh 15px;
+   border: 1px solid #C4C4C4;
+   border-radius: 7px;
+   margin-top: 15px;
+   outline: none;
+   font-size: 15px;
+}
+#sign-up .container .content:nth-child(1) .into form button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500; 
+  width: 22vw;
+  padding: 1.8vh 15px;
+  border: 1px solid #C4C4C4;
+  border-radius: 7px;
+  margin-top: 15px;
+  outline: none;
+  font-size: 15px;
+  background:  #03015D;
+  color:white;
+  cursor: pointer;
+}
+#sign-up .container .content .error {
+  background: #F29494;
+  padding: 1.4vh 2vw;
+  border-radius: 7px;
+  width:22vw;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400; 
+}
+
+
+@media(max-width: 600px) {
+  #sign-up .container {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    border-radius: 0;
+  }
+  #sign-up .container .content {
+    width: 100%;
+    height:100%;
+ }
+ #sign-up .container .content:nth-child(1) {
+  border-radius: 0;
+ }
+ #sign-up .container .content:nth-child(2) .into {
+  padding: 80px 40px;
+}
+ #sign-up .container .content:nth-child(2) {
+  border-radius: 0;
+ }
+ #sign-up .container .content:nth-child(1) .into form div:nth-child(2){
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   flex-direction: column;
+   width: 90%;
+ }
+ #sign-up .container .content:nth-child(1) .into form {
+    padding:10px 30px;
+  }
+ #sign-up .container .content:nth-child(1) .into form input {
+   width: 90%;
+   padding:7px 15px;
+ }
+ #sign-up .container .content:nth-child(1) .into form .sign-up_section {
+  width: 90%;
+  bottom: 15px;
+}
+ #sign-up .container .content:nth-child(1) .into form button {
+  width: 84%;
+  padding:8px 15px;
+}
+#sign-up .container .content .error {
+  padding: 5px 2vw;
+  width:90%;
+}
+}

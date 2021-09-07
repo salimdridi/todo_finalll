@@ -1,0 +1,200 @@
+#login {
+  width:100%;
+  height: 100vh;
+  background-color: #C4C4C4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#login .container {
+  width: 52vw;
+  height: 55vh;
+  background-color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+#login .container .content {
+   width: 50%;
+   height:100%;
+}
+#login .container .content:nth-child(1) .into{
+  padding:10vh 3.5vw;
+}
+#login .container .content:nth-child(1) h2 {
+  font-family: 'Rubik', sans-serif;
+  color: white;
+  font-weight: 500;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+#login .container .content:nth-child(1) p {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-weight: 300;
+  font-size: 12px;
+  margin-top:2.5px;
+}
+#login .container .content:nth-child(1) a {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 12px;
+}
+#login .container .content:nth-child(2) {
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+#login .container .content:nth-child(1) {
+  border-radius: 15px;
+  background-color: #03015D;
+}
+#login .container .content:nth-child(2) .into  {
+  position: relative;
+  height:100%;
+}
+#login .container .content:nth-child(2) .into form {
+  padding: 4vh 1.8vw;
+}
+#login .container .content:nth-child(2) .into .login_section{
+  position: absolute;
+  bottom: 4vh;
+}
+
+#login .container .content:nth-child(2) .into form input {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400; 
+  width: 22vw;
+   padding: 1.8vh 15px;
+   border: 1px solid #C4C4C4;
+   border-radius: 7px;
+   margin-top: 15px;
+   outline: none;
+   font-size: 15px;
+}
+#login .container .content:nth-child(2) .into form button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500; 
+  width: 22vw;
+  padding: 1.8vh 15px;
+  border: 1px solid #C4C4C4;
+  border-radius: 7px;
+  margin-top: 15px;
+  outline: none;
+  font-size: 15px;
+  background:  #03015D;
+  color:white;
+  cursor: pointer;
+}
+#login .container .content .error {
+  background: #F29494;
+  padding: 1.4vh 2vw;
+  border-radius: 7px;
+  width:22vw;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400; 
+}
+#login .container .content .forgot {
+  color: rgb(139, 139, 139);
+  font-family: "Poppins", sans-serif;
+  font-weight: 300; 
+  font-size:13px;
+  margin-top: 2vh;
+}
+#login .container .content .forgot a{
+  color: #03015D;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700; 
+  font-size:13px;
+  margin-top: 2vh;
+  text-decoration: none;
+}
+
+
+@media(max-width: 600px) {
+  #login .container {
+    width: 100% !important;
+    height: 100% !important;
+    flex-direction: column;
+    border-radius: 0;
+  }
+  #login .container .content {
+    width: 100%;
+    height:100%;
+ }
+ #login .container .content:nth-child(2) {
+  border-radius: 0;
+ }
+ #login .container .content:nth-child(1) .into {
+  padding: 80px 40px;
+}
+ #login .container .content:nth-child(1) {
+  border-radius: 0;
+ }
+ #login .container .content:nth-child(2) .into form div:nth-child(1){
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   flex-direction: column;
+   width: 90%;
+ }
+ #login .container .content:nth-child(2) .into form {
+    padding:20px 30px;
+  }
+ #login .container .content:nth-child(2) .into form input {
+   width: 90%;
+ }
+ #login .container .content:nth-child(2) .into form .login_section {
+  width: 90%;
+}
+ #login .container .content:nth-child(2) .into form button {
+  width: 75% !important;
+}
+#login .container .content .error {
+  padding: 1.5vh 2vw;
+  width:90%;
+}
+}
+
+@media(max-width: 800px) {
+  #login .container {
+    width: 85vw;
+    height: 55vh;
+  }
+  #login .container .content:nth-child(2) .into form input {
+    width: 80% !important;
+  }
+  #login .container .content:nth-child(2) .into form button {
+    width: 32vw;
+  }
+  #login .container .content .forgot {
+    font-size:10px !important;
+  }
+  #login .container .content .forgot a{
+    font-size:10px !important;
+  }
+}
+@media(max-width: 1000px) {
+  #login .container {
+    width: 75vw;
+    height: 55vh;
+  }
+  #login .container .content:nth-child(2) .into form input {
+    width: 80% !important;
+  }
+  #login .container .content:nth-child(2) .into form button {
+    width: 32vw;
+  }
+  #login .container .content .forgot {
+    font-size:10px !important;
+  }
+  #login .container .content .forgot a{
+    font-size:10px !important;
+  }
+} 
+
+
+
